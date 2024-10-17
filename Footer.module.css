@@ -1,0 +1,42 @@
+.footer {
+    background-color: #E8EBED;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;/*important!*/
+    width: 100%;
+}
+
+.footerContainer {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.description {
+    font-size: 14px;
+    color: #333;
+}
+
+.contact {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contactInfo {
+    font-size: 14px;
+    color: #666;
+}
+
+.footerBottom {
+    margin-top: 20px;
+    background-color: #00568D;
+    color: white;
+    padding: 10px 0;
+}
+
+
