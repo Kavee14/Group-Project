@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
+import { useNavigate, Link } from 'react-router-dom'; // Import necessary components for navigation
+import NavBar1 from "../components/NavBar1";
 import Footer from "../components/Footer";
 import './Login.css'; // External stylesheet for styling
 
@@ -8,6 +10,7 @@ function Login() {
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState({ email: '', password: '' });
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const navigate = useNavigate(); // Hook for navigation
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -38,11 +41,14 @@ function Login() {
 
         if (!hasErrors) {
             setIsSubmitted(true);
+            // Navigate to the dashboard after successful login
+            navigate('/dashboard');
         }
     };
 
     return (
         <div className="login-page">
+            <NavBar1/>
             <Container className="mt-5">
                 <div className="login-container">
                     <Row className="justify-content-center">
@@ -94,7 +100,7 @@ function Login() {
                                     </Col>
 
                                     <Col md={4} className="text-right">
-                                        <a href="Login.js" className="clear-link">Do you want to clear?</a>
+                                        <Link to="/" className="clear-link">Do you want to clear?</Link>
                                     </Col>
                                 </Row>
                                 <br/>
@@ -109,7 +115,7 @@ function Login() {
                             <br/>
                             <div className="text-center mt-3">
                                 <p style={{color: '#666666'}}>
-                                    New member? <a href="Login.js" className="register-link">Register Now</a>
+                                    New member? <Link to="/register" className="register-link">Register Now</Link>
                                 </p>
                             </div>
 
