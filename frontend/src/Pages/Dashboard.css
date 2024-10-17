@@ -1,0 +1,132 @@
+/* EMS Dashboard styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f3f4f6;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo img {
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    color: #1e40af;
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    margin-bottom: 10px;
+  }
+  
+  .nav-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #4b5563;
+    border-radius: 4px;
+  }
+  
+  .nav-menu a.active {
+    background-color: #1e40af;
+    color: white;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 30px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+  }
+  
+  .upcoming-duties {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .duty-card {
+    background-color: #1e40af;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .duty-card.light {
+    background-color: white;
+    color: #1e40af;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .duty-date {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .updates, .calendar {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .no-updates {
+    background-color: #f3f4f6;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    color: #6b7280;
+  }
+  
+  .request-button {
+    display: block;
+    width: 40%;
+    padding: 10px;
+    background-color: #1e40af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
